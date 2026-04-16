@@ -277,11 +277,17 @@
                 </div>
                 
                 <div class="contact-form">
-                    <form action="#" method="POST">
-                        <input type="text" placeholder="Your Name" required>
-                        <input type="email" placeholder="Your Email" required>
-                        <input type="text" placeholder="Subject">
-                        <textarea rows="5" placeholder="Your Message" required></textarea>
+                    <!-- Contact Form - Updated to work -->
+                    <form action="https://formsubmit.co/romanajacky@gmail.com" method="POST">
+                        <!-- Add these hidden fields for better formatting -->
+                        <input type="hidden" name="_subject" value="New Contact Form Submission - Zion Website">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_template" value="table">
+                        
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <input type="text" name="subject" placeholder="Subject">
+                        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
                         <button type="submit" class="submit-btn">Send Message <i class="fas fa-paper-plane"></i></button>
                     </form>
                 </div>
