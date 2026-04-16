@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Message Sent - Zion</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #0a0e13 0%, #0d1117 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family: 'Inter', Arial, sans-serif;
+            padding: 20px;
+        }
+        
+        .success-container {
+            text-align: center;
+            max-width: 500px;
+            padding: 50px 40px;
+            background: rgba(20, 25, 35, 0.9);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            border: 1px solid rgba(255, 140, 0, 0.3);
+            animation: fadeIn 0.5s ease;
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .checkmark {
+            width: 80px;
+            height: 80px;
+            background: #ff8c00;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 25px;
+            animation: scaleIn 0.5s ease 0.2s backwards;
+        }
+        
+        @keyframes scaleIn {
+            from {
+                transform: scale(0);
+            }
+            to {
+                transform: scale(1);
+            }
+        }
+        
+        .checkmark i {
+            font-size: 45px;
+            color: #1a1a1a;
+        }
+        
+        h1 {
+            color: #ff8c00;
+            font-size: 32px;
+            margin-bottom: 15px;
+        }
+        
+        p {
+            color: #cccccc;
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+        
+        .redirect-note {
+            color: #888888;
+            font-size: 14px;
+            margin-top: 20px;
+        }
+        
+        .home-btn {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 12px 30px;
+            background: #ff8c00;
+            color: #1a1a1a;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+        
+        .home-btn:hover {
+            background: #ffaa33;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+    <div class="success-container">
+        <div class="checkmark">
+            <i class="fas fa-check"></i>
+        </div>
+        <h1>Thank You!</h1>
+        <p>Your message has been sent successfully.</p>
+        <p>We'll get back to you within 24 hours.</p>
+        <div class="redirect-note">Redirecting you back in 3 seconds...</div>
+        <a href="https://romanajacky.github.io/zion/" class="home-btn">← Back to Home</a>
+    </div>
+    
+    <script>
+        // Redirect after 3 seconds
+        setTimeout(function() {
+            window.location.href = "https://romanajacky.github.io/zion/";
+        }, 3000);
+    </script>
+</body>
+</html>
