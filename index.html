@@ -321,8 +321,11 @@
             <div class="footer-contact">
                 <h3>Newsletter</h3>
                 <p>Subscribe for GIS insights and updates</p>
-                <form class="newsletter-form">
-                    <input type="email" placeholder="Your email">
+                <!-- Newsletter Form - Updated to work -->
+                <form class="newsletter-form" action="https://formsubmit.co/romanajacky@gmail.com" method="POST">
+                    <input type="hidden" name="_subject" value="Newsletter Subscription - Zion">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="email" name="email" placeholder="Your email" required>
                     <button type="submit"><i class="fas fa-paper-plane"></i> Subscribe</button>
                 </form>
             </div>
