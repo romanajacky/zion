@@ -6,6 +6,7 @@
 
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 75px;
 }
 
 body {
@@ -15,6 +16,7 @@ body {
     background: #0a0a0a;
 }
 
+/* ========== MAIN HERO SECTION ========== */
 .main {
     width: 100%;
     min-height: 100vh;
@@ -24,24 +26,30 @@ body {
     background-size: cover;
     background-attachment: fixed;
     position: relative;
+    padding-top: 70px;
 }
 
-/* ========== NAVBAR - FIXED (NO WRAPPING) ========== */
-
+/* ========== NAVBAR - COMPACT & CONSISTENT ========== */
 .navbar {
     width: 100%;
     background: rgba(20, 15, 10, 0.95);
+    /* Vendor prefixes for backdrop-filter */
+    -webkit-backdrop-filter: blur(10px);
+    -moz-backdrop-filter: blur(10px);
+    -ms-backdrop-filter: blur(10px);
+    -o-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     position: fixed;
     top: 0;
     left: 0;
     z-index: 1000;
-    padding: 15px 5%;
+    padding: 8px 4%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-bottom: 2px solid rgba(255, 140, 0, 0.4);
     transition: all 0.3s ease;
+    height: 70px;
 }
 
 .menu-toggle {
@@ -50,7 +58,7 @@ body {
 
 /* LOGO */
 .logo img {
-    width: 200px;
+    width: 150px;
     height: auto;
     display: block;
     filter: brightness(1.2) drop-shadow(0 0 5px rgba(255, 140, 0, 0.3));
@@ -71,7 +79,7 @@ body {
 }
 
 .hamburger span {
-    width: 30px;
+    width: 28px;
     height: 3px;
     background: #ff8c00;
     margin: 3px 0;
@@ -83,15 +91,15 @@ body {
 .menu ul {
     display: flex;
     list-style: none;
-    gap: 8px;
+    gap: 5px;
     margin: 0;
     padding: 0;
 }
 
 .menu ul li a {
     color: #f5f5f5;
-    padding: 10px 22px;
-    font-size: 18px;
+    padding: 8px 16px;
+    font-size: 16px;
     font-family: 'Inter', Arial, sans-serif;
     font-weight: bold;
     text-decoration: none;
@@ -115,7 +123,7 @@ body {
 }
 
 .menu ul li a:hover::after {
-    width: 60%;
+    width: 50%;
 }
 
 .menu ul li a:hover {
@@ -132,13 +140,13 @@ body {
 
 .srch {
     font-family: 'Times New Roman', serif;
-    height: 42px;
-    width: 200px;
+    height: 38px;
+    width: 180px;
     background: rgba(0, 0, 0, 0.7);
     border: 2px solid #ff8c00;
     border-right: none;
-    font-size: 14px;
-    padding: 0 15px;
+    font-size: 13px;
+    padding: 0 12px;
     color: #f5f5f5;
     border-radius: 30px 0 0 30px;
     outline: none;
@@ -148,19 +156,19 @@ body {
 .srch:focus {
     border-color: #ffaa33;
     background: rgba(0, 0, 0, 0.9);
-    box-shadow: 0 0 8px rgba(255, 140, 0, 0.4);
+    box-shadow: 0 0 5px rgba(255, 140, 0, 0.3);
 }
 
 .srch::placeholder {
     color: rgba(245, 245, 245, 0.6);
-    font-size: 13px;
+    font-size: 12px;
 }
 
 .btn {
-    width: 90px;
-    height: 42px;
+    width: 80px;
+    height: 38px;
     background: #ff8c00;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: bold;
     border: none;
     cursor: pointer;
@@ -175,10 +183,10 @@ body {
     transform: scale(1.02);
 }
 
-/* Content */
+/* HERO CONTENT - PUSHED DOWN FOR VISIBILITY */
 .content {
     position: absolute;
-    top: 50%;
+    top: 55%;
     left: 8%;
     transform: translateY(-50%);
     color: #f5f5f5;
@@ -246,6 +254,15 @@ body {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+/* ========== SCROLL MARGIN FOR SECTIONS ========== */
+section,
+#services,
+#why-choose,
+#projects,
+#contact {
+    scroll-margin-top: 75px;
 }
 
 /* ========== GLOBAL SECTION STYLES ========== */
@@ -321,6 +338,11 @@ body {
 
 .service-card {
     background: rgba(20, 25, 35, 0.9);
+    /* Vendor prefixes for backdrop-filter */
+    -webkit-backdrop-filter: blur(10px);
+    -moz-backdrop-filter: blur(10px);
+    -ms-backdrop-filter: blur(10px);
+    -o-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     padding: 40px 25px;
     border-radius: 20px;
@@ -430,7 +452,11 @@ body {
     text-align: center;
     padding: 40px 25px;
     background: rgba(255, 140, 0, 0.08);
-    border-radius: 20px;
+    /* Vendor prefixes for backdrop-filter */
+    -webkit-backdrop-filter: blur(10px);
+    -moz-backdrop-filter: blur(10px);
+    -ms-backdrop-filter: blur(10px);
+    -o-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     transition: all 0.4s ease;
     border: 1px solid rgba(255, 140, 0, 0.2);
@@ -755,7 +781,7 @@ footer {
     background: #0a0a0a;
     color: white;
     padding: 50px 0 0 0;
-    border-top: 1px solid rgba(255, 140, 0, 0.3);
+    border-top: 2px solid rgba(255, 140, 0, 0.3);
 }
 
 footer .container {
@@ -897,70 +923,62 @@ footer p {
     font-size: 14px;
 }
 
-/* ========== RESPONSIVE DESIGN - FIXED ========== */
+/* ========== RESPONSIVE DESIGN ========== */
 
-/* Tablet and Mobile (below 1024px) */
-@media screen and (max-width: 1024px) {
-    .menu ul li a {
-        padding: 10px 16px;
-        font-size: 16px;
+/* Tablet */
+@media screen and (max-width: 992px) {
+    .navbar {
+        padding: 8px 4%;
+        height: 60px;
     }
     
-    .srch {
-        width: 170px;
+    .logo img {
+        width: 120px;
     }
     
-    .btn {
-        width: 80px;
+    .hamburger {
+        display: flex;
     }
-}
-
-/* Mobile (below 900px) - Menu and Search become slide-in */
-@media screen and (max-width: 900px) {
-    /* Hide desktop menu and search */
+    
     .menu {
         position: fixed;
-        top: 70px;
+        top: 60px;
         left: -100%;
         width: 100%;
-        height: calc(100vh - 70px);
+        height: calc(100vh - 60px);
         background: rgba(10, 10, 10, 0.98);
+        /* Vendor prefixes for backdrop-filter */
+        -webkit-backdrop-filter: blur(20px);
+        -moz-backdrop-filter: blur(20px);
+        -ms-backdrop-filter: blur(20px);
+        -o-backdrop-filter: blur(20px);
         backdrop-filter: blur(20px);
         transition: left 0.3s ease;
         z-index: 999;
-        overflow-y: auto;
     }
     
     .search {
         position: fixed;
-        top: 70px;
+        top: 60px;
         right: -100%;
         width: 100%;
-        padding: 20px;
+        padding: 15px;
         background: rgba(10, 10, 10, 0.98);
         justify-content: center;
         transition: right 0.3s ease;
         z-index: 999;
     }
     
-    /* Show hamburger */
-    .hamburger {
-        display: flex;
-    }
-    
-    /* Show menu when checkbox checked */
     .menu-toggle:checked ~ .menu {
         left: 0;
     }
     
-    /* Show search when checkbox checked */
     .menu-toggle:checked ~ .search {
         right: 0;
     }
     
-    /* Animate hamburger to X */
     .menu-toggle:checked ~ .hamburger span:nth-child(1) {
-        transform: rotate(45deg) translate(6px, 6px);
+        transform: rotate(45deg) translate(5px, 6px);
     }
     
     .menu-toggle:checked ~ .hamburger span:nth-child(2) {
@@ -968,70 +986,58 @@ footer p {
     }
     
     .menu-toggle:checked ~ .hamburger span:nth-child(3) {
-        transform: rotate(-45deg) translate(6px, -6px);
+        transform: rotate(-45deg) translate(5px, -6px);
     }
     
-    /* Mobile menu styles */
     .menu ul {
         flex-direction: column;
-        padding: 40px 20px;
-        gap: 20px;
+        padding: 30px 20px;
+        gap: 15px;
         align-items: center;
     }
     
     .menu ul li a {
-        font-size: 22px;
-        padding: 12px 30px;
-    }
-    
-    /* Mobile search styles */
-    .srch {
-        width: 65%;
-        height: 48px;
-        font-size: 16px;
-    }
-    
-    .btn {
-        width: 100px;
-        height: 48px;
-        font-size: 16px;
-    }
-}
-
-/* Small adjustments for very large screens */
-@media screen and (min-width: 1400px) {
-    .navbar {
-        padding: 15px 8%;
-    }
-    
-    .menu ul {
-        gap: 15px;
-    }
-    
-    .menu ul li a {
-        padding: 12px 28px;
         font-size: 20px;
+        padding: 10px 25px;
     }
     
     .srch {
-        width: 250px;
-        height: 48px;
+        width: 60%;
+        height: 42px;
+        font-size: 14px;
     }
     
     .btn {
-        width: 100px;
-        height: 48px;
+        width: 90px;
+        height: 42px;
+        font-size: 14px;
     }
     
-    .logo img {
-        width: 220px;
+    .main {
+        padding-top: 60px;
+    }
+    
+    html {
+        scroll-padding-top: 60px;
+    }
+    
+    section,
+    #services,
+    #why-choose,
+    #projects,
+    #contact {
+        scroll-margin-top: 60px;
+    }
+    
+    .content {
+        top: 55%;
     }
 }
 
-/* Mobile content adjustments */
+/* Mobile */
 @media screen and (max-width: 768px) {
     .logo img {
-        width: 150px;
+        width: 110px;
     }
     
     .content {
@@ -1086,44 +1092,142 @@ footer p {
     .stat-number {
         font-size: 40px;
     }
+    
+    .contact-info h2 {
+        font-size: 36px;
+    }
 }
 
+/* Small Mobile */
 @media screen and (max-width: 480px) {
-    .logo img {
-        width: 130px;
+    .navbar {
+        height: 55px;
     }
     
-    .navbar {
-        padding: 12px 5%;
+    .logo img {
+        width: 95px;
+    }
+    
+    .main {
+        padding-top: 55px;
+    }
+    
+    .content {
+        top: 50%;
     }
     
     .content h1 {
-        font-size: 32px;
+        font-size: 28px;
     }
     
     .par {
-        font-size: 16px;
+        font-size: 14px;
     }
     
     .content .cn {
-        width: 160px;
-        height: 42px;
+        width: 150px;
+        height: 40px;
         font-size: 16px;
     }
     
     .content .cn a {
-        line-height: 42px;
+        line-height: 40px;
     }
     
     .section-header h2 {
         font-size: 28px;
     }
     
+    .stat-number {
+        font-size: 32px;
+    }
+    
     .contact-form {
         padding: 25px;
     }
     
-    .service-card, .benefit-card, .project-card {
+    .service-card,
+    .benefit-card,
+    .project-card {
         padding: 25px 20px;
     }
+    
+    html {
+        scroll-padding-top: 55px;
+    }
+    
+    section,
+    #services,
+    #why-choose,
+    #projects,
+    #contact {
+        scroll-margin-top: 55px;
+    }
+}
+
+/* Short screens (landscape on mobile) */
+@media screen and (max-height: 600px) {
+    .content {
+        top: 60%;
+    }
+    
+    .content h1 {
+        font-size: 32px;
+        margin-bottom: 10px;
+    }
+    
+    .par {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    
+    .content .cn {
+        width: 140px;
+        height: 38px;
+        font-size: 15px;
+    }
+    
+    .content .cn a {
+        line-height: 38px;
+    }
+}
+
+/* ========== COMPLETE VENDOR PREFIX SUPPORT ========== */
+/* Firefox */
+@-moz-document url-prefix() {
+    .navbar,
+    .service-card,
+    .benefit-card,
+    .menu {
+        backdrop-filter: blur(10px);
+    }
+}
+
+/* Safari-specific */
+@media not all and (min-resolution:.001dpcm) {
+    @supports (-webkit-appearance:none) {
+        .navbar,
+        .service-card,
+        .benefit-card,
+        .menu {
+            -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+        }
+    }
+}
+
+/* Edge and IE fallback */
+@supports (-ms-ime-align: auto) {
+    .navbar,
+    .service-card,
+    .benefit-card {
+        background: rgba(20, 15, 10, 0.98);
+    }
+}
+
+/* Ensure smooth fonts across all browsers */
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
 }
