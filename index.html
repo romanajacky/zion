@@ -1,41 +1,342 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Zion</title>
+    <title>Zion - GIS & Remote Sensing</title>
     <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome 6 (free) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Flat Icon CDN for additional icons -->
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-straight/css/uicons-regular-straight.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-straight/css/uicons-solid-straight.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-bold-straight/css/uicons-bold-straight.css'>
 </head>
 
 <body>
+    <!-- Hero Section -->
     <div class="main">
-
         <div class="navbar">
             <div class="logo">
-                <img src="Zion logo.png" alt="Zion logo" class="logo">
+                <img src="Zion logo.png" alt="Zion logo">
             </div>
-
+            
+            <!-- Checkbox hack for mobile menu -->
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            
             <div class="menu">
                 <ul>
-                    <li><a href="index.html">Home</a></li>                    
-                    <li><a href="products.html">About</a></li>
-                    <li><a href="#">Products</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#home" onclick="document.getElementById('menu-toggle').checked = false">Home</a></li>                    
+                    <li><a href="#services" onclick="document.getElementById('menu-toggle').checked = false">Services</a></li>
+                    <li><a href="#why-choose" onclick="document.getElementById('menu-toggle').checked = false">Why Us</a></li>
+                    <li><a href="#projects" onclick="document.getElementById('menu-toggle').checked = false">Projects</a></li>
+                    <li><a href="#contact" onclick="document.getElementById('menu-toggle').checked = false">Contact</a></li>
                 </ul>
             </div>
 
             <div class="search">                
-                <button class="btn">Search</button>
                 <input class="srch" type="search" placeholder="Type text">
+                <button class="btn">Search</button>
             </div>
         </div>
   
-        <div class="content">
+        <div class="content" id="home">
             <h1>GIS &<br><span>Remote Sensing</span></h1>
             <p class="par">
-                Zion offers a collection of products like land use change analysis, risk analysis, maps, preprocessed satellite imagery and other custom designed satellite-based products.            
-            <button class="cn"><a href="#">EXPLORE MORE</a></button>
+                Zion offers a collection of products like land use change analysis, risk analysis, maps, preprocessed satellite imagery and other custom designed satellite-based products.
             </p>
+            <button class="cn"><a href="#services">EXPLORE MORE</a></button>
+        </div>
+    </div>
+
+    <!-- ========== SECTION 1: OUR SERVICES ========== -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our <span>Services</span></h2>
+                <p>Comprehensive geospatial solutions tailored to your needs</p>
+            </div>
+            <div class="three-columns">
+                <div class="service-card">
+                    <div class="card-icon">
+                        <i class="fi fi-ts-satellite"></i>
+                    </div>
+                    <h3>Land Use Change Analysis</h3>
+                    <p>Track and analyze changes in land cover over time using multi-temporal satellite imagery. Perfect for urban planning, agriculture monitoring, and forest management.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check-circle"></i> Time-series analysis</li>
+                        <li><i class="fas fa-check-circle"></i> Change detection mapping</li>
+                        <li><i class="fas fa-check-circle"></i> Trend prediction</li>
+                    </ul>
+                    <a href="#" class="card-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card">
+                    <div class="card-icon">
+                        <i class="fas fa-exclamation-triangle"></i>
+                    </div>
+                    <h3>Risk Assessment & Analysis</h3>
+                    <p>Identify and evaluate natural disaster risks including floods, landslides, and wildfires. Make data-driven decisions for disaster preparedness and mitigation.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check-circle"></i> Flood risk mapping</li>
+                        <li><i class="fas fa-check-circle"></i> Wildfire susceptibility</li>
+                        <li><i class="fas fa-check-circle"></i> Vulnerability assessment</li>
+                    </ul>
+                    <a href="#" class="card-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card">
+                    <div class="card-icon">
+                        <i class="fas fa-map-marked-alt"></i>
+                    </div>
+                    <h3>Custom Satellite Products</h3>
+                    <p>Pre-processed satellite imagery, vegetation indices (NDVI), thermal maps, and custom GIS data layers designed for your specific project requirements.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check-circle"></i> NDVI & vegetation health</li>
+                        <li><i class="fas fa-check-circle"></i> Thermal & moisture maps</li>
+                        <li><i class="fas fa-check-circle"></i> Custom data layers</li>
+                    </ul>
+                    <a href="#" class="card-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== SECTION 2: WHY CHOOSE ZION ========== -->
+    <section id="why-choose" class="why-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why Choose <span>Zion</span></h2>
+                <p>Excellence in every pixel, precision in every analysis</p>
+            </div>
+            <div class="three-columns">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <h3>High Precision Data</h3>
+                    <p>Sub-meter accuracy with validated ground-truthing. Our data meets international standards for geospatial analysis and peer-reviewed research.</p>
+                    <div class="benefit-stat">99.5% Accuracy</div>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Fast Turnaround</h3>
+                    <p>Quick delivery without compromising quality. Standard products delivered in 48 hours, custom solutions in 5-7 business days.</p>
+                    <div class="benefit-stat">48hr Standard Delivery</div>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>Custom Solutions</h3>
+                    <p>Tailored GIS workflows and automated processing pipelines designed specifically for your unique use case and requirements.</p>
+                    <div class="benefit-stat">100% Tailored</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== SECTION 3: FEATURED PROJECTS ========== -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured <span>Projects</span></h2>
+                <p>Real-world applications of our geospatial expertise</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-city"></i>
+                    </div>
+                    <h3>Urban Sprawl Analysis</h3>
+                    <p class="project-location"><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</p>
+                    <p>Monitored urban expansion over 20 years using Landsat imagery, providing insights for sustainable city planning and infrastructure development.</p>
+                    <div class="project-tags">
+                        <span>Urban Planning</span>
+                        <span>Time Series</span>
+                        <span>Landsat</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-water"></i>
+                    </div>
+                    <h3>Flood Risk Mapping</h3>
+                    <p class="project-location"><i class="fas fa-map-marker-alt"></i> Coastal Region</p>
+                    <p>Developed high-resolution flood hazard maps identifying vulnerable zones, evacuation routes, and critical infrastructure at risk.</p>
+                    <div class="project-tags">
+                        <span>Risk Assessment</span>
+                        <span>Hydrology</span>
+                        <span>DEM Analysis</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-tree"></i>
+                    </div>
+                    <h3>Deforestation Monitoring</h3>
+                    <p class="project-location"><i class="fas fa-map-marker-alt"></i> Amazon Basin</p>
+                    <p>Real-time deforestation alert system using Sentinel-1 radar and optical data fusion techniques for early intervention.</p>
+                    <div class="project-tags">
+                        <span>Forestry</span>
+                        <span>Change Detection</span>
+                        <span>Sentinel</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-tractor"></i>
+                    </div>
+                    <h3>Agricultural Health Assessment</h3>
+                    <p class="project-location"><i class="fas fa-map-marker-alt"></i> Rift Valley, Kenya</p>
+                    <p>Crop health monitoring using NDVI analysis, identifying stressed areas and predicting harvest yields.</p>
+                    <div class="project-tags">
+                        <span>Agriculture</span>
+                        <span>NDVI</span>
+                        <span>Yield Prediction</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== STATS SECTION (Trust Indicators) ========== -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number">12</div>
+                    <div class="stat-label">Projects Completed</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">2+</div>
+                    <div class="stat-label">Years Experience</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">7+</div>
+                    <div class="stat-label">Happy Clients</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">98%</div>
+                    <div class="stat-label">Client Satisfaction</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== SECTION 4: CONTACT SECTION ========== -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h2>Get In <span>Touch</span></h2>
+                    <p>Ready to transform your geospatial data into actionable insights? Let's discuss your project.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-pin"></i>
+                            </div>
+                            <div>
+                                <h4>Visit Us</h4>
+                                <p>43844 Kenyatta University, Nairobi, Kenya</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4>Email Us</h4>
+                                <p>romanajacky@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div>
+                                <h4>Call Us</h4>
+                                <p>+254 704 298 398</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div>
+                                <h4>Working Hours</h4>
+                                <p>Monday - Friday: 8:00 AM - 6:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form action="#" method="POST">
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                        <input type="text" placeholder="Subject">
+                        <textarea rows="5" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="submit-btn">Send Message <i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <h3>About Zion</h3>
+                <p>Providing cutting-edge GIS and remote sensing solutions for sustainable development and risk management worldwide.</p>
+                <div class="social-links">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home" onclick="document.getElementById('menu-toggle').checked = false">Home</a></li>
+                    <li><a href="#services" onclick="document.getElementById('menu-toggle').checked = false">Services</a></li>
+                    <li><a href="#why-choose" onclick="document.getElementById('menu-toggle').checked = false">Why Us</a></li>
+                    <li><a href="#projects" onclick="document.getElementById('menu-toggle').checked = false">Projects</a></li>
+                    <li><a href="#contact" onclick="document.getElementById('menu-toggle').checked = false">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Newsletter</h3>
+                <p>Subscribe for GIS insights and updates</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your email">
+                    <button type="submit"><i class="fas fa-paper-plane"></i> Subscribe</button>
+                </form>
+            </div>
         </div>
 
-    </div>
+        <div class="bottom-bar">
+            <p>Copyright © 2026 Zion. All rights reserved. | Powered by GIS Excellence</p>
+        </div>
+    </footer>
+
+    <script>
+        // Close mobile menu when clicking a link
+        document.querySelectorAll('.menu ul li a, .footer-links ul li a').forEach(link => {
+            link.addEventListener('click', function() {
+                const checkbox = document.getElementById('menu-toggle');
+                if (checkbox && checkbox.checked) {
+                    checkbox.checked = false;
+                }
+            });
+        });
+    </script>
 </body>
 </html>
