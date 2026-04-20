@@ -16,7 +16,7 @@ body {
     background: #0a0a0a;
 }
 
-/* ========== MAIN HERO SECTION ========== */
+/* ========== MAIN HERO SECTION - SCROLLABLE BACKGROUND ========== */
 .main {
     width: 100%;
     min-height: 100vh;
@@ -24,7 +24,8 @@ body {
                 url("nasa-Q1p7bh3SHj8-unsplash.jpg");
     background-position: center;
     background-size: cover;
-    background-attachment: fixed;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
     position: relative;
     padding-top: 70px;
 }
@@ -33,11 +34,6 @@ body {
 .navbar {
     width: 100%;
     background: rgba(20, 15, 10, 0.95);
-    /* Vendor prefixes for backdrop-filter */
-    -webkit-backdrop-filter: blur(10px);
-    -moz-backdrop-filter: blur(10px);
-    -ms-backdrop-filter: blur(10px);
-    -o-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     position: fixed;
     top: 0;
@@ -112,7 +108,7 @@ body {
 .menu ul li a::after {
     content: '';
     position: absolute;
-    bottom: 5px;
+    bottom: 3px;
     left: 50%;
     transform: translateX(-50%);
     width: 0;
@@ -128,10 +124,10 @@ body {
 
 .menu ul li a:hover {
     color: #ff8c00;
-    background: rgba(255, 140, 0, 0.15);
+    background: rgba(255, 140, 0, 0.1);
 }
 
-/* SEARCH BAR - DESKTOP */
+/* SEARCH BAR */
 .search {
     display: flex;
     align-items: center;
@@ -156,7 +152,7 @@ body {
 .srch:focus {
     border-color: #ffaa33;
     background: rgba(0, 0, 0, 0.9);
-    box-shadow: 0 0 5px rgba(255, 140, 0, 0.3);
+    box-shadow: 0 0 8px rgba(255, 140, 0, 0.4);
 }
 
 .srch::placeholder {
@@ -183,14 +179,15 @@ body {
     transform: scale(1.02);
 }
 
-/* HERO CONTENT - PUSHED DOWN FOR VISIBILITY */
+/* Content - Now scrolls naturally */
 .content {
-    position: absolute;
-    top: 55%;
-    left: 8%;
-    transform: translateY(-50%);
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+    padding: 60px 5% 80px 8%;
     color: #f5f5f5;
-    max-width: 600px;
+    max-width: 650px;
     z-index: 1;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
@@ -256,15 +253,6 @@ body {
     }
 }
 
-/* ========== SCROLL MARGIN FOR SECTIONS ========== */
-section,
-#services,
-#why-choose,
-#projects,
-#contact {
-    scroll-margin-top: 75px;
-}
-
 /* ========== GLOBAL SECTION STYLES ========== */
 .container {
     max-width: 1200px;
@@ -324,6 +312,7 @@ section,
     background: linear-gradient(135deg, #0d1117 0%, #0a0e13 100%);
     position: relative;
     overflow: hidden;
+    scroll-margin-top: 75px;
 }
 
 .services-section::before {
@@ -338,11 +327,6 @@ section,
 
 .service-card {
     background: rgba(20, 25, 35, 0.9);
-    /* Vendor prefixes for backdrop-filter */
-    -webkit-backdrop-filter: blur(10px);
-    -moz-backdrop-filter: blur(10px);
-    -ms-backdrop-filter: blur(10px);
-    -o-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     padding: 40px 25px;
     border-radius: 20px;
@@ -446,17 +430,14 @@ section,
     padding: 80px 0;
     background: linear-gradient(135deg, #0a0e13 0%, #0d1117 100%);
     position: relative;
+    scroll-margin-top: 75px;
 }
 
 .benefit-card {
     text-align: center;
     padding: 40px 25px;
     background: rgba(255, 140, 0, 0.08);
-    /* Vendor prefixes for backdrop-filter */
-    -webkit-backdrop-filter: blur(10px);
-    -moz-backdrop-filter: blur(10px);
-    -ms-backdrop-filter: blur(10px);
-    -o-backdrop-filter: blur(10px);
+    border-radius: 20px;
     backdrop-filter: blur(10px);
     transition: all 0.4s ease;
     border: 1px solid rgba(255, 140, 0, 0.2);
@@ -503,6 +484,7 @@ section,
     padding: 80px 0;
     background: linear-gradient(135deg, #0d1117 0%, #0a0e13 100%);
     position: relative;
+    scroll-margin-top: 75px;
 }
 
 .projects-grid {
@@ -634,6 +616,7 @@ section,
 .contact-section {
     padding: 80px 0;
     background: linear-gradient(135deg, #0a0e13 0%, #0d1117 100%);
+    scroll-margin-top: 75px;
 }
 
 .contact-wrapper {
@@ -780,7 +763,7 @@ section,
 footer {
     background: #0a0a0a;
     color: white;
-    padding: 50px 0 0 0;
+    padding: 60px 0 0 0;
     border-top: 2px solid rgba(255, 140, 0, 0.3);
 }
 
@@ -789,7 +772,7 @@ footer .container {
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 40px;
-    padding-bottom: 40px;
+    padding-bottom: 50px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -882,7 +865,7 @@ footer p {
 
 .newsletter-form input {
     flex: 1;
-    padding: 10px 12px;
+    padding: 10px 15px;
     border: 1px solid rgba(255, 140, 0, 0.3);
     border-radius: 8px;
     background: rgba(0, 0, 0, 0.5);
@@ -924,8 +907,6 @@ footer p {
 }
 
 /* ========== RESPONSIVE DESIGN ========== */
-
-/* Tablet */
 @media screen and (max-width: 992px) {
     .navbar {
         padding: 8px 4%;
@@ -947,11 +928,6 @@ footer p {
         width: 100%;
         height: calc(100vh - 60px);
         background: rgba(10, 10, 10, 0.98);
-        /* Vendor prefixes for backdrop-filter */
-        -webkit-backdrop-filter: blur(20px);
-        -moz-backdrop-filter: blur(20px);
-        -ms-backdrop-filter: blur(20px);
-        -o-backdrop-filter: blur(20px);
         backdrop-filter: blur(20px);
         transition: left 0.3s ease;
         z-index: 999;
@@ -979,6 +955,7 @@ footer p {
     
     .menu-toggle:checked ~ .hamburger span:nth-child(1) {
         transform: rotate(45deg) translate(5px, 6px);
+        background: #ff8c00;
     }
     
     .menu-toggle:checked ~ .hamburger span:nth-child(2) {
@@ -987,6 +964,7 @@ footer p {
     
     .menu-toggle:checked ~ .hamburger span:nth-child(3) {
         transform: rotate(-45deg) translate(5px, -6px);
+        background: #ff8c00;
     }
     
     .menu ul {
@@ -1017,34 +995,31 @@ footer p {
         padding-top: 60px;
     }
     
+    .content {
+        padding: 40px 5% 60px 8%;
+    }
+    
     html {
         scroll-padding-top: 60px;
     }
     
-    section,
-    #services,
-    #why-choose,
-    #projects,
-    #contact {
+    .services-section,
+    .why-section,
+    .projects-section,
+    .contact-section {
         scroll-margin-top: 60px;
-    }
-    
-    .content {
-        top: 55%;
     }
 }
 
-/* Mobile */
 @media screen and (max-width: 768px) {
-    .logo img {
-        width: 110px;
+    .main {
+        padding-top: 60px;
     }
     
     .content {
-        left: 5%;
-        right: 5%;
+        padding: 30px 5% 50px 5%;
         text-align: center;
-        max-width: 90%;
+        max-width: 100%;
     }
     
     .content h1 {
@@ -1093,19 +1068,19 @@ footer p {
         font-size: 40px;
     }
     
-    .contact-info h2 {
-        font-size: 36px;
+    html {
+        scroll-padding-top: 60px;
     }
 }
 
-/* Small Mobile */
 @media screen and (max-width: 480px) {
     .navbar {
         height: 55px;
+        padding: 6px 4%;
     }
     
     .logo img {
-        width: 95px;
+        width: 100px;
     }
     
     .main {
@@ -1113,15 +1088,15 @@ footer p {
     }
     
     .content {
-        top: 50%;
+        padding: 20px 5% 40px 5%;
     }
     
     .content h1 {
-        font-size: 28px;
+        font-size: 32px;
     }
     
     .par {
-        font-size: 14px;
+        font-size: 16px;
     }
     
     .content .cn {
@@ -1139,7 +1114,7 @@ footer p {
     }
     
     .stat-number {
-        font-size: 32px;
+        font-size: 36px;
     }
     
     .contact-form {
@@ -1156,78 +1131,86 @@ footer p {
         scroll-padding-top: 55px;
     }
     
-    section,
-    #services,
-    #why-choose,
-    #projects,
-    #contact {
+    .services-section,
+    .why-section,
+    .projects-section,
+    .contact-section {
         scroll-margin-top: 55px;
     }
 }
 
-/* Short screens (landscape on mobile) */
-@media screen and (max-height: 600px) {
-    .content {
-        top: 60%;
-    }
-    
-    .content h1 {
-        font-size: 32px;
-        margin-bottom: 10px;
-    }
-    
-    .par {
-        font-size: 14px;
-        margin-bottom: 10px;
-    }
-    
-    .content .cn {
-        width: 140px;
-        height: 38px;
-        font-size: 15px;
-    }
-    
-    .content .cn a {
-        line-height: 38px;
-    }
+/* ========== SCROLL MARGIN FOR ALL SECTIONS ========== */
+section {
+    scroll-margin-top: 75px;
 }
 
-/* ========== COMPLETE VENDOR PREFIX SUPPORT ========== */
-/* Firefox */
-@-moz-document url-prefix() {
-    .navbar,
-    .service-card,
-    .benefit-card,
-    .menu {
+#services, #why-choose, #projects, #contact {
+    scroll-margin-top: 75px;
+}
+
+/* ========== CHROME-SPECIFIC FIXES ========== */
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+    .navbar {
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+    }
+    
+    .service-card, .benefit-card {
+        -webkit-backdrop-filter: blur(10px);
         backdrop-filter: blur(10px);
     }
 }
 
-/* Safari-specific */
-@media not all and (min-resolution:.001dpcm) {
-    @supports (-webkit-appearance:none) {
-        .navbar,
-        .service-card,
-        .benefit-card,
-        .menu {
-            -webkit-backdrop-filter: blur(10px);
-            backdrop-filter: blur(10px);
-        }
+/* ========== NOTIFICATION STYLES (FOR FORM SUBMISSIONS) ========== */
+.custom-notification {
+    position: fixed;
+    top: 90px;
+    right: 20px;
+    padding: 15px 25px;
+    border-radius: 10px;
+    z-index: 10000;
+    animation: slideIn 0.3s ease;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.custom-notification.success {
+    background: #00c851;
+    color: white;
+}
+
+.custom-notification.error {
+    background: #ff4444;
+    color: white;
+}
+
+.notification-content {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.notification-content i {
+    font-size: 20px;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
     }
 }
 
-/* Edge and IE fallback */
-@supports (-ms-ime-align: auto) {
-    .navbar,
-    .service-card,
-    .benefit-card {
-        background: rgba(20, 15, 10, 0.98);
+@keyframes slideOut {
+    from {
+        transform: translateX(0);
+        opacity: 1;
     }
-}
-
-/* Ensure smooth fonts across all browsers */
-body {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-rendering: optimizeLegibility;
+    to {
+        transform: translateX(100%);
+        opacity: 0;
+    }
 }
