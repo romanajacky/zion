@@ -16,7 +16,7 @@ body {
     background: #0a0a0a;
 }
 
-/* ========== MAIN HERO SECTION - SCROLLABLE BACKGROUND ========== */
+/* ========== MAIN HERO SECTION - BACKGROUND SCROLLS AWAY ========== */
 .main {
     width: 100%;
     min-height: 100vh;
@@ -24,7 +24,7 @@ body {
                 url("nasa-Q1p7bh3SHj8-unsplash.jpg");
     background-position: center;
     background-size: cover;
-    background-attachment: scroll;
+    background-attachment: scroll;  /* This makes it scroll up with page */
     background-repeat: no-repeat;
     position: relative;
     padding-top: 70px;
