@@ -24,7 +24,7 @@ body {
                 url("nasa-Q1p7bh3SHj8-unsplash.jpg");
     background-position: center;
     background-size: cover;
-    background-attachment: scroll;  /* This makes it scroll up with page */
+    background-attachment: scroll;  /* CRITICAL: This makes it scroll away */
     background-repeat: no-repeat;
     position: relative;
     padding-top: 70px;
