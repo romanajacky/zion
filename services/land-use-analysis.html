@@ -1,1 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Land Use Change Analysis - Zion</title>
+    <link rel="stylesheet" href="../style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../Zion logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-straight/css/uicons-regular-straight.css'>
+    <style>
+        .detail-page {
+            padding: 100px 5% 60px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .detail-section {
+            background: rgba(20, 25, 35, 0.9);
+            border-radius: 20px;
+            padding: 40px;
+            margin-bottom: 30px;
+            border: 1px solid rgba(255, 140, 0, 0.2);
+        }
+        .detail-section h2 {
+            color: #ff8c00;
+            margin-bottom: 20px;
+            font-size: 28px;
+        }
+        .detail-section h3 {
+            color: #f5f5f5;
+            margin: 20px 0 10px;
+            font-size: 22px;
+        }
+        .detail-section p, .detail-section li {
+            color: #cccccc;
+            line-height: 1.8;
+        }
+        .detail-section ul, .detail-section ol {
+            padding-left: 20px;
+            margin: 15px 0;
+        }
+        .detail-section li {
+            margin-bottom: 8px;
+        }
+        .tech-badge {
+            display: inline-block;
+            background: rgba(255, 140, 0, 0.15);
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            color: #ffaa66;
+            margin-right: 8px;
+            margin-bottom: 8px;
+        }
+        .back-button {
+            display: inline-block;
+            background: transparent;
+            border: 2px solid #ff8c00;
+            padding: 10px 25px;
+            border-radius: 8px;
+            color: #ff8c00;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 20px;
+            transition: all 0.3s ease;
+        }
+        .back-button:hover {
+            background: #ff8c00;
+            color: #1a1a1a;
+        }
+        .cta-button {
+            display: inline-block;
+            background: #ff8c00;
+            padding: 12px 30px;
+            border-radius: 8px;
+            color: #1a1a1a;
+            text-decoration: none;
+            font-weight: bold;
+            margin-right: 15px;
+            transition: all 0.3s ease;
+        }
+        .cta-button:hover {
+            background: #ffaa33;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="../Zion logo.png" alt="Zion logo">
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../index.html#services">Services</a></li>
+                <li><a href="../index.html#why-choose">Why Us</a></li>
+                <li><a href="../index.html#projects">Projects</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="search">
+            <input class="srch" type="search" placeholder="Type text">
+            <button class="btn">Search</button>
+        </div>
+    </div>
 
+    <div class="detail-page">
+        <h1 style="color: #ff8c00; font-size: 42px; margin-bottom: 20px;">Land Use Change Analysis</h1>
+        <p style="color: #cccccc; font-size: 18px; margin-bottom: 30px;">Track and analyze changes in land cover over time using multi-temporal satellite imagery</p>
+
+        <div class="detail-section">
+            <h2>Service Overview</h2>
+            <p>Our Land Use Change Analysis service provides comprehensive monitoring of land cover transformations over time. Using multi-temporal satellite imagery and advanced machine learning algorithms, we deliver accurate, actionable insights for urban planning, agriculture monitoring, forestry management, and environmental conservation.</p>
+        </div>
+
+        <div class="detail-section">
+            <h2>What We Offer</h2>
+            <ul>
+                <li><i class="fas fa-check-circle" style="color: #ff8c00; margin-right: 10px;"></i> Time-series analysis spanning 20+ years</li>
+                <li><i class="fas fa-check-circle" style="color: #ff8c00; margin-right: 10px;"></i> Change detection mapping with 92%+ accuracy</li>
+                <li><i class="fas fa-check-circle" style="color: #ff8c00; margin-right: 10px;"></i> Trend prediction and future scenario modeling</li>
+                <li><i class="fas fa-check-circle" style="color: #ff8c00; margin-right: 10px;"></i> Custom land cover classification schemes</li>
+                <li><i class="fas fa-check-circle" style="color: #ff8c00; margin-right: 10px;"></i> Automated change alerts and reporting</li>
+            </ul>
+        </div>
+
+        <div class="detail-section">
+            <h2>Methodology</h2>
+            <h3>Data Sources</h3>
+            <p>We utilize multiple satellite data sources including Landsat (5,7,8), Sentinel-2, and commercial high-resolution imagery where required.</p>
+            
+            <h3>Processing Workflow</h3>
+            <ol>
+                <li>Image pre-processing (atmospheric correction, cloud masking)</li>
+                <li>Feature extraction and spectral analysis</li>
+                <li>Supervised classification using Random Forest algorithm</li>
+                <li>Post-classification smoothing and accuracy assessment</li>
+                <li>Change detection using post-classification comparison</li>
+                <li>Trend analysis and future projection</li>
+            </ol>
+        </div>
+
+        <div class="detail-section">
+            <h2>Technologies Used</h2>
+            <div>
+                <span class="tech-badge">Google Earth Engine</span>
+                <span class="tech-badge">Python (GDAL, Rasterio)</span>
+                <span class="tech-badge">Random Forest</span>
+                <span class="tech-badge">Landsat Archive</span>
+                <span class="tech-badge">Sentinel-2</span>
+                <span class="tech-badge">QGIS</span>
+                <span class="tech-badge">ArcGIS Pro</span>
+            </div>
+        </div>
+
+        <div class="detail-section">
+            <h2>Delivery Timeline</h2>
+            <p><strong>Standard analysis:</strong> 5-7 business days</p>
+            <p><strong>Express analysis:</strong> 2-3 business days (additional fee)</p>
+            <p><strong>Custom long-term monitoring:</strong> Quarterly or annual reports available</p>
+        </div>
+
+        <div class="detail-section">
+            <h2>Pricing</h2>
+            <p>Starting from <strong style="color: #ff8c00;">$500</strong> per analysis project</p>
+            <p>Custom quotes available for large-area or long-term monitoring projects</p>
+        </div>
+
+        <div>
+            <a href="../index.html#contact" class="cta-button">Request a Quote →</a>
+            <a href="../index.html#services" class="back-button">← Back to Services</a>
+        </div>
+    </div>
+
+    <footer style="margin-top: 60px;">
+        <div class="container">
+            <div class="footer-content">
+                <h3>About Zion</h3>
+                <p>Providing cutting-edge GIS and remote sensing solutions for sustainable development.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../index.html#services">Services</a></li>
+                    <li><a href="../index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="bottom-bar">
+            <p>Copyright © 2026 Zion. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
