@@ -1,1 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Deforestation Monitoring - Zion Projects</title>
+    <link rel="stylesheet" href="../style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../Zion logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .detail-page { padding: 100px 5% 60px; max-width: 1200px; margin: 0 auto; }
+        .detail-section { background: rgba(20,25,35,0.9); border-radius: 20px; padding: 40px; margin-bottom: 30px; border: 1px solid rgba(255,140,0,0.2); }
+        .detail-section h2 { color: #ff8c00; margin-bottom: 20px; font-size: 28px; }
+        .detail-section h3 { color: #f5f5f5; margin: 20px 0 10px; font-size: 22px; }
+        .detail-section p, .detail-section li { color: #cccccc; line-height: 1.8; }
+        .stat-highlight { font-size: 36px; font-weight: bold; color: #ff8c00; }
+        .back-button { display: inline-block; background: transparent; border: 2px solid #ff8c00; padding: 10px 25px; border-radius: 8px; color: #ff8c00; text-decoration: none; font-weight: bold; margin-top: 20px; transition: all 0.3s ease; }
+        .back-button:hover { background: #ff8c00; color: #1a1a1a; }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo"><img src="../Zion logo.png" alt="Zion logo"></div>
+        <div class="menu"><ul><li><a href="../index.html">Home</a></li><li><a href="../index.html#services">Services</a></li><li><a href="../index.html#why-choose">Why Us</a></li><li><a href="../index.html#projects">Projects</a></li><li><a href="../index.html#contact">Contact</a></li></ul></div>
+        <div class="search"><input class="srch" type="search" placeholder="Type text"><button class="btn">Search</button></div>
+    </div>
 
+    <div class="detail-page">
+        <h1 style="color: #ff8c00; font-size: 42px; margin-bottom: 20px;">Deforestation Monitoring System</h1>
+        <p style="color: #cccccc; font-size: 18px; margin-bottom: 30px;"><i class="fas fa-map-marker-alt"></i> Amazon Basin, Brazil | Real-time</p>
+
+        <div class="detail-section">
+            <h2>Project Overview</h2>
+            <p>A real-time deforestation alert system using Sentinel-1 radar and optical data fusion techniques for early intervention and law enforcement support.</p>
+        </div>
+
+        <div class="detail-section">
+            <h2>System Capabilities</h2>
+            <ul>
+                <li><span class="stat-highlight">6-day</span> detection latency</li>
+                <li><span class="stat-highlight">92%</span> detection accuracy for clear-cuts</li>
+                <li>Monitors <span class="stat-highlight">500,000+</span> hectares</li>
+                <li><span class="stat-highlight">1,200+</span> deforestation alerts generated (2023)</li>
+            </ul>
+        </div>
+
+        <div class="detail-section">
+            <h2>Technical Approach</h2>
+            <h3>Data Fusion</h3>
+            <p>Sentinel-1 SAR (cloud-penetrating) + Sentinel-2 optical for all-weather monitoring</p>
+            <h3>Change Detection Algorithm</h3>
+            <p>Random Forest classifier trained on 10,000+ reference points</p>
+            <h3>Alert System</h3>
+            <p>Automated email and SMS notifications to enforcement agencies within 48 hours of detection</p>
+        </div>
+
+        <div class="detail-section">
+            <h2>Impact</h2>
+            <ul>
+                <li>Enabled <strong>78 illegal logging operations</strong> to be stopped</li>
+                <li>Reduced response time from <strong>14 days to 48 hours</strong></li>
+                <li>Supported <strong>3 conservation areas</strong> with ongoing monitoring</li>
+            </ul>
+        </div>
+
+        <div>
+            <a href="../index.html#contact" class="back-button" style="background: #ff8c00; color: #1a1a1a;">Request Monitoring Demo →</a>
+            <a href="../index.html#projects" class="back-button">← Back to Projects</a>
+        </div>
+    </div>
+
+    <footer style="margin-top: 60px;">
+        <div class="container">
+            <div class="footer-content"><h3>About Zion</h3><p>Providing cutting-edge GIS and remote sensing solutions.</p></div>
+            <div class="footer-links"><h3>Quick Links</h3><ul><li><a href="../index.html">Home</a></li><li><a href="../index.html#projects">Projects</a></li></ul></div>
+        </div>
+        <div class="bottom-bar"><p>Copyright © 2026 Zion. All rights reserved.</p></div>
+    </footer>
+</body>
+</html>
