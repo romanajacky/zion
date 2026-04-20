@@ -1,1 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Flood Risk Mapping - Zion Projects</title>
+    <link rel="stylesheet" href="../style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../Zion logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .detail-page { padding: 100px 5% 60px; max-width: 1200px; margin: 0 auto; }
+        .detail-section { background: rgba(20,25,35,0.9); border-radius: 20px; padding: 40px; margin-bottom: 30px; border: 1px solid rgba(255,140,0,0.2); }
+        .detail-section h2 { color: #ff8c00; margin-bottom: 20px; font-size: 28px; }
+        .detail-section h3 { color: #f5f5f5; margin: 20px 0 10px; font-size: 22px; }
+        .detail-section p, .detail-section li { color: #cccccc; line-height: 1.8; }
+        .stat-highlight { font-size: 36px; font-weight: bold; color: #ff8c00; }
+        .back-button { display: inline-block; background: transparent; border: 2px solid #ff8c00; padding: 10px 25px; border-radius: 8px; color: #ff8c00; text-decoration: none; font-weight: bold; margin-top: 20px; transition: all 0.3s ease; }
+        .back-button:hover { background: #ff8c00; color: #1a1a1a; }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo"><img src="../Zion logo.png" alt="Zion logo"></div>
+        <div class="menu"><ul><li><a href="../index.html">Home</a></li><li><a href="../index.html#services">Services</a></li><li><a href="../index.html#why-choose">Why Us</a></li><li><a href="../index.html#projects">Projects</a></li><li><a href="../index.html#contact">Contact</a></li></ul></div>
+        <div class="search"><input class="srch" type="search" placeholder="Type text"><button class="btn">Search</button></div>
+    </div>
 
+    <div class="detail-page">
+        <h1 style="color: #ff8c00; font-size: 42px; margin-bottom: 20px;">Flood Risk Mapping</h1>
+        <p style="color: #cccccc; font-size: 18px; margin-bottom: 30px;"><i class="fas fa-map-marker-alt"></i> Coastal Region, Kenya | 2023</p>
+
+        <div class="detail-section">
+            <h2>Project Overview</h2>
+            <p>This project developed high-resolution flood hazard maps for Kenya's coastal region, identifying vulnerable zones, evacuation routes, and critical infrastructure at risk from both riverine and coastal flooding.</p>
+        </div>
+
+        <div class="detail-section">
+            <h2>Key Outcomes</h2>
+            <ul>
+                <li>Mapped <span class="stat-highlight">250km²</span> of flood-prone areas</li>
+                <li>Identified <span class="stat-highlight">15</span> critical infrastructure facilities at risk</li>
+                <li>Developed <span class="stat-highlight">8</span> optimal evacuation routes</li>
+                <li>Protected <span class="stat-highlight">50,000+</span> residents with early warning integration</li>
+            </ul>
+        </div>
+
+        <div class="detail-section">
+            <h2>Methodology</h2>
+            <h3>Data Sources</h3>
+            <p>Sentinel-1 SAR imagery, TanDEM-X elevation data, rainfall records, and historical flood data</p>
+            <h3>Modeling Approach</h3>
+            <p>Hydrological modeling using HEC-RAS combined with machine learning for flood susceptibility mapping</p>
+        </div>
+
+        <div class="detail-section">
+            <h2>Flood Hazard Zones</h2>
+            <ul>
+                <li><strong style="color: #dc3545;">High Risk (100-year flood zone):</strong> 45 km² - Immediate action required</li>
+                <li><strong style="color: #ffc107;">Medium Risk (200-year flood zone):</strong> 85 km² - Monitoring recommended</li>
+                <li><strong style="color: #28a745;">Low Risk:</strong> 120 km² - Standard preparedness</li>
+            </ul>
+        </div>
+
+        <div>
+            <a href="../index.html#contact" class="back-button" style="background: #ff8c00; color: #1a1a1a;">Request Risk Assessment →</a>
+            <a href="../index.html#projects" class="back-button">← Back to Projects</a>
+        </div>
+    </div>
+
+    <footer style="margin-top: 60px;">
+        <div class="container">
+            <div class="footer-content"><h3>About Zion</h3><p>Providing cutting-edge GIS and remote sensing solutions.</p></div>
+            <div class="footer-links"><h3>Quick Links</h3><ul><li><a href="../index.html">Home</a></li><li><a href="../index.html#projects">Projects</a></li></ul></div>
+        </div>
+        <div class="bottom-bar"><p>Copyright © 2026 Zion. All rights reserved.</p></div>
+    </footer>
+</body>
+</html>
