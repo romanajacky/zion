@@ -1,1 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Agricultural Health Assessment - Zion Projects</title>
+    <link rel="stylesheet" href="../style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../Zion logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .detail-page { padding: 100px 5% 60px; max-width: 1200px; margin: 0 auto; }
+        .detail-section { background: rgba(20,25,35,0.9); border-radius: 20px; padding: 40px; margin-bottom: 30px; border: 1px solid rgba(255,140,0,0.2); }
+        .detail-section h2 { color: #ff8c00; margin-bottom: 20px; font-size: 28px; }
+        .detail-section h3 { color: #f5f5f5; margin: 20px 0 10px; font-size: 22px; }
+        .detail-section p, .detail-section li { color: #cccccc; line-height: 1.8; }
+        .stat-highlight { font-size: 36px; font-weight: bold; color: #ff8c00; }
+        .back-button { display: inline-block; background: transparent; border: 2px solid #ff8c00; padding: 10px 25px; border-radius: 8px; color: #ff8c00; text-decoration: none; font-weight: bold; margin-top: 20px; transition: all 0.3s ease; }
+        .back-button:hover { background: #ff8c00; color: #1a1a1a; }
+        .health-good { color: #28a745; }
+        .health-warning { color: #ffc107; }
+        .health-critical { color: #dc3545; }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo"><img src="../Zion logo.png" alt="Zion logo"></div>
+        <div class="menu"><ul><li><a href="../index.html">Home</a></li><li><a href="../index.html#services">Services</a></li><li><a href="../index.html#why-choose">Why Us</a></li><li><a href="../index.html#projects">Projects</a></li><li><a href="../index.html#contact">Contact</a></li></ul></div>
+        <div class="search"><input class="srch" type="search" placeholder="Type text"><button class="btn">Search</button></div>
+    </div>
 
+    <div class="detail-page">
+        <h1 style="color: #ff8c00; font-size: 42px; margin-bottom: 20px;">Agricultural Health Assessment</h1>
+        <p style="color: #cccccc; font-size: 18px; margin-bottom: 30px;"><i class="fas fa-map-marker-alt"></i> Rift Valley, Kenya | 2024 Growing Season</p>
+
+        <div class="detail-section">
+            <h2>Project Overview</h2>
+            <p>This project monitored crop health across 50,000 hectares in Kenya's Rift Valley using NDVI analysis from Sentinel-2 imagery, identifying stressed areas and predicting harvest yields.</p>
+        </div>
+
+        <div class="detail-section">
+            <h2>Crop Health Status</h2>
+            <ul>
+                <li><span class="health-good">● Good:</span> 35,000 hectares (70%) - <span class="stat-highlight">Expected yield: 4.2 tons/hectare</span></li>
+                <li><span class="health-warning">● Warning:</span> 10,000 hectares (20%) - <span class="stat-highlight">Expected yield: 2.8 tons/hectare</span></li>
+                <li><span class="health-critical">● Critical:</span> 5,000 hectares (10%) - <span class="stat-highlight">Expected yield: 1.1 tons/hectare</span></li>
+            </ul>
+        </div>
+
+        <div class="detail-section">
+            <h2>Methodology</h2>
+            <h3>Vegetation Indices</h3>
+            <p>NDVI (Normalized Difference Vegetation Index) time-series analysis from February-June 2024</p>
+            <h3>Stress Detection</h3>
+            <p>Identified drought stress, nutrient deficiency, and pest infestation patterns</p>
+            <h3>Yield Prediction</h3>
+            <p>Machine learning model trained on 5 years of historical yield data</p>
+        </div>
+
+        <div class="detail-section">
+            <h2>Recommendations</h2>
+            <ul>
+                <li><strong>Critical zones:</strong> Immediate irrigation intervention recommended</li>
+                <li><strong>Warning zones:</strong> Targeted fertilizer application</li>
+                <li><strong>Healthy zones:</strong> Continue standard practices, monitor for changes</li>
+            </ul>
+        </div>
+
+        <div class="detail-section">
+            <h2>Project Impact</h2>
+            <ul>
+                <li>Prevented <strong>estimated $2.5M</strong> in crop losses through early intervention</li>
+                <li>Supported <strong>12,000+ farmers</strong> with zone-specific recommendations</li>
+                <li>Reduced fertilizer waste by <strong>15%</strong> through targeted application</li>
+            </ul>
+        </div>
+
+        <div>
+            <a href="../index.html#contact" class="back-button" style="background: #ff8c00; color: #1a1a1a;">Request Crop Monitoring →</a>
+            <a href="../index.html#projects" class="back-button">← Back to Projects</a>
+        </div>
+    </div>
+
+    <footer style="margin-top: 60px;">
+        <div class="container">
+            <div class="footer-content"><h3>About Zion</h3><p>Providing cutting-edge GIS and remote sensing solutions.</p></div>
+            <div class="footer-links"><h3>Quick Links</h3><ul><li><a href="../index.html">Home</a></li><li><a href="../index.html#projects">Projects</a></li></ul></div>
+        </div>
+        <div class="bottom-bar"><p>Copyright © 2026 Zion. All rights reserved.</p></div>
+    </footer>
+</body>
+</html>
