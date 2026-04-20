@@ -1,1 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Risk Assessment & Analysis - Zion</title>
+    <link rel="stylesheet" href="../style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../Zion logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-straight/css/uicons-regular-straight.css'>
+    <style>
+        .detail-page { padding: 100px 5% 60px; max-width: 1200px; margin: 0 auto; }
+        .detail-section { background: rgba(20,25,35,0.9); border-radius: 20px; padding: 40px; margin-bottom: 30px; border: 1px solid rgba(255,140,0,0.2); }
+        .detail-section h2 { color: #ff8c00; margin-bottom: 20px; font-size: 28px; }
+        .detail-section h3 { color: #f5f5f5; margin: 20px 0 10px; font-size: 22px; }
+        .detail-section p, .detail-section li { color: #cccccc; line-height: 1.8; }
+        .detail-section ul, .detail-section ol { padding-left: 20px; margin: 15px 0; }
+        .tech-badge { display: inline-block; background: rgba(255,140,0,0.15); padding: 5px 12px; border-radius: 20px; font-size: 12px; color: #ffaa66; margin-right: 8px; margin-bottom: 8px; }
+        .back-button { display: inline-block; background: transparent; border: 2px solid #ff8c00; padding: 10px 25px; border-radius: 8px; color: #ff8c00; text-decoration: none; font-weight: bold; margin-top: 20px; transition: all 0.3s ease; }
+        .back-button:hover { background: #ff8c00; color: #1a1a1a; }
+        .cta-button { display: inline-block; background: #ff8c00; padding: 12px 30px; border-radius: 8px; color: #1a1a1a; text-decoration: none; font-weight: bold; margin-right: 15px; transition: all 0.3s ease; }
+        .cta-button:hover { background: #ffaa33; transform: translateY(-2px); }
+        .risk-level { display: inline-block; padding: 4px 12px; border-radius: 20px; font-size: 12px; font-weight: bold; margin-right: 10px; }
+        .risk-high { background: #dc3545; color: white; }
+        .risk-medium { background: #ffc107; color: #1a1a1a; }
+        .risk-low { background: #28a745; color: white; }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo"><img src="../Zion logo.png" alt="Zion logo"></div>
+        <div class="menu"><ul><li><a href="../index.html">Home</a></li><li><a href="../index.html#services">Services</a></li><li><a href="../index.html#why-choose">Why Us</a></li><li><a href="../index.html#projects">Projects</a></li><li><a href="../index.html#contact">Contact</a></li></ul></div>
+        <div class="search"><input class="srch" type="search" placeholder="Type text"><button class="btn">Search</button></div>
+    </div>
 
+    <div class="detail-page">
+        <h1 style="color: #ff8c00; font-size: 42px; margin-bottom: 20px;">Risk Assessment & Analysis</h1>
+        <p style="color: #cccccc; font-size: 18px; margin-bottom: 30px;">Identify and evaluate natural disaster risks using advanced geospatial analysis</p>
+
+        <div class="detail-section">
+            <h2>Service Overview</h2>
+            <p>Our Risk Assessment service helps communities, governments, and organizations identify, evaluate, and prepare for natural hazards including floods, landslides, wildfires, and droughts. Using satellite data and predictive modeling, we deliver actionable risk maps and vulnerability assessments.</p>
+        </div>
+
+        <div class="detail-section">
+            <h2>Risk Types We Analyze</h2>
+            <ul>
+                <li><span class="risk-level risk-high">High</span> Flood risk mapping and inundation modeling</li>
+                <li><span class="risk-level risk-high">High</span> Wildfire susceptibility and spread prediction</li>
+                <li><span class="risk-level risk-medium">Medium</span> Landslide hazard zonation</li>
+                <li><span class="risk-level risk-medium">Medium</span> Drought monitoring and prediction</li>
+                <li><span class="risk-level risk-low">Low</span> Coastal erosion and sea-level rise impact</li>
+            </ul>
+        </div>
+
+        <div class="detail-section">
+            <h2>What We Deliver</h2>
+            <ul>
+                <li><i class="fas fa-map" style="color: #ff8c00; margin-right: 10px;"></i> High-resolution hazard zonation maps</li>
+                <li><i class="fas fa-chart-line" style="color: #ff8c00; margin-right: 10px;"></i> Vulnerability and exposure assessments</li>
+                <li><i class="fas fa-route" style="color: #ff8c00; margin-right: 10px;"></i> Evacuation route planning</li>
+                <li><i class="fas fa-building" style="color: #ff8c00; margin-right: 10px;"></i> Critical infrastructure risk analysis</li>
+                <li><i class="fas fa-file-alt" style="color: #ff8c00; margin-right: 10px;"></i> Comprehensive risk assessment reports</li>
+            </ul>
+        </div>
+
+        <div class="detail-section">
+            <h2>Methodology</h2>
+            <h3>Flood Risk Assessment</h3>
+            <p>We use hydrological modeling combined with DEM analysis, rainfall data, and historical flood records to create detailed flood hazard maps.</p>
+            <h3>Wildfire Risk Assessment</h3>
+            <p>Our analysis incorporates vegetation indices (NDVI), topography, weather patterns, and historical fire data to predict fire-prone areas.</p>
+            <h3>Landslide Hazard Zonation</h3>
+            <p>We analyze slope, aspect, geology, soil type, and rainfall thresholds to identify landslide susceptible zones.</p>
+        </div>
+
+        <div class="detail-section">
+            <h2>Technologies Used</h2>
+            <div>
+                <span class="tech-badge">HEC-RAS</span>
+                <span class="tech-badge">Flood Modeller</span>
+                <span class="tech-badge">QGIS</span>
+                <span class="tech-badge">ArcGIS Pro</span>
+                <span class="tech-badge">Sentinel-1 SAR</span>
+                <span class="tech-badge">TanDEM-X</span>
+                <span class="tech-badge">Python (GeoPandas)</span>
+            </div>
+        </div>
+
+        <div class="detail-section">
+            <h2>Delivery Timeline</h2>
+            <p><strong>Standard assessment:</strong> 10-14 business days</p>
+            <p><strong>Emergency rapid assessment:</strong> 3-5 business days</p>
+        </div>
+
+        <div class="detail-section">
+            <h2>Pricing</h2>
+            <p>Starting from <strong style="color: #ff8c00;">$750</strong> per risk assessment project</p>
+            <p>Multi-hazard assessments and large-area studies quoted separately</p>
+        </div>
+
+        <div>
+            <a href="../index.html#contact" class="cta-button">Request a Quote →</a>
+            <a href="../index.html#services" class="back-button">← Back to Services</a>
+        </div>
+    </div>
+
+    <footer style="margin-top: 60px;">
+        <div class="container">
+            <div class="footer-content"><h3>About Zion</h3><p>Providing cutting-edge GIS and remote sensing solutions for sustainable development.</p></div>
+            <div class="footer-links"><h3>Quick Links</h3><ul><li><a href="../index.html">Home</a></li><li><a href="../index.html#services">Services</a></li><li><a href="../index.html#contact">Contact</a></li></ul></div>
+        </div>
+        <div class="bottom-bar"><p>Copyright © 2026 Zion. All rights reserved.</p></div>
+    </footer>
+</body>
+</html>
