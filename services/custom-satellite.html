@@ -1,1 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Custom Satellite Products - Zion</title>
+    <link rel="stylesheet" href="../style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../Zion logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-straight/css/uicons-regular-straight.css'>
+    <style>
+        .detail-page { padding: 100px 5% 60px; max-width: 1200px; margin: 0 auto; }
+        .detail-section { background: rgba(20,25,35,0.9); border-radius: 20px; padding: 40px; margin-bottom: 30px; border: 1px solid rgba(255,140,0,0.2); }
+        .detail-section h2 { color: #ff8c00; margin-bottom: 20px; font-size: 28px; }
+        .detail-section h3 { color: #f5f5f5; margin: 20px 0 10px; font-size: 22px; }
+        .detail-section p, .detail-section li { color: #cccccc; line-height: 1.8; }
+        .detail-section ul { padding-left: 20px; margin: 15px 0; }
+        .tech-badge { display: inline-block; background: rgba(255,140,0,0.15); padding: 5px 12px; border-radius: 20px; font-size: 12px; color: #ffaa66; margin-right: 8px; margin-bottom: 8px; }
+        .back-button { display: inline-block; background: transparent; border: 2px solid #ff8c00; padding: 10px 25px; border-radius: 8px; color: #ff8c00; text-decoration: none; font-weight: bold; margin-top: 20px; transition: all 0.3s ease; }
+        .back-button:hover { background: #ff8c00; color: #1a1a1a; }
+        .cta-button { display: inline-block; background: #ff8c00; padding: 12px 30px; border-radius: 8px; color: #1a1a1a; text-decoration: none; font-weight: bold; margin-right: 15px; transition: all 0.3s ease; }
+        .cta-button:hover { background: #ffaa33; transform: translateY(-2px); }
+        .product-card { background: rgba(255,140,0,0.05); border-radius: 12px; padding: 20px; margin-bottom: 15px; }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo"><img src="../Zion logo.png" alt="Zion logo"></div>
+        <div class="menu"><ul><li><a href="../index.html">Home</a></li><li><a href="../index.html#services">Services</a></li><li><a href="../index.html#why-choose">Why Us</a></li><li><a href="../index.html#projects">Projects</a></li><li><a href="../index.html#contact">Contact</a></li></ul></div>
+        <div class="search"><input class="srch" type="search" placeholder="Type text"><button class="btn">Search</button></div>
+    </div>
 
+    <div class="detail-page">
+        <h1 style="color: #ff8c00; font-size: 42px; margin-bottom: 20px;">Custom Satellite Products</h1>
+        <p style="color: #cccccc; font-size: 18px; margin-bottom: 30px;">Pre-processed satellite imagery and custom GIS data layers designed for your specific requirements</p>
+
+        <div class="detail-section">
+            <h2>Service Overview</h2>
+            <p>We provide ready-to-use satellite imagery products tailored to your project needs. From vegetation indices to thermal maps, our custom products save you time and ensure data consistency for your analysis workflows.</p>
+        </div>
+
+        <div class="detail-section">
+            <h2>Standard Products</h2>
+            <div class="product-card">
+                <h3 style="color: #ff8c00; margin-bottom: 10px;">🌿 NDVI & Vegetation Health</h3>
+                <p>Normalized Difference Vegetation Index maps for crop health monitoring, forest density assessment, and vegetation stress detection.</p>
+                <span class="tech-badge">10m resolution</span>
+                <span class="tech-badge">5-day revisit</span>
+            </div>
+            <div class="product-card">
+                <h3 style="color: #ff8c00; margin-bottom: 10px;">🌡️ Thermal & Moisture Maps</h3>
+                <p>Land Surface Temperature (LST) and Soil Moisture content maps for drought monitoring, urban heat island analysis, and irrigation planning.</p>
+                <span class="tech-badge">30m resolution</span>
+                <span class="tech-badge">Thermal band</span>
+            </div>
+            <div class="product-card">
+                <h3 style="color: #ff8c00; margin-bottom: 10px;">🗺️ Custom Data Layers</h3>
+                <p>Any GIS-ready data layer you need: land cover classification, digital elevation models, slope analysis, aspect maps, and more.</p>
+                <span class="tech-badge">Fully customizable</span>
+                <span class="tech-badge">Any format</span>
+            </div>
+        </div>
+
+        <div class="detail-section">
+            <h2>Satellite Data Sources</h2>
+            <ul>
+                <li><strong>Landsat 8 & 9</strong> - 30m resolution, 16-day revisit</li>
+                <li><strong>Sentinel-2</strong> - 10m resolution, 5-day revisit</li>
+                <li><strong>Sentinel-1</strong> - SAR data, 6-day revisit</li>
+                <li><strong>MODIS</strong> - 250m resolution, daily revisit</li>
+                <li><strong>Planet Scope</strong> - 3m resolution, daily revisit (commercial)</li>
+                <li><strong>Maxar (DigitalGlobe)</strong> - 0.5m resolution, on-demand</li>
+            </ul>
+        </div>
+
+        <div class="detail-section">
+            <h2>Custom Processing Options</h2>
+            <ul>
+                <li><i class="fas fa-check-circle" style="color: #ff8c00; margin-right: 10px;"></i> Atmospheric correction</li>
+                <li><i class="fas fa-check-circle" style="color: #ff8c00; margin-right: 10px;"></i> Cloud masking and gap filling</li>
+                <li><i class="fas fa-check-circle" style="color: #ff8c00; margin-right: 10px;"></i> Pan-sharpening (improve resolution)</li>
+                <li><i class="fas fa-check-circle" style="color: #ff8c00; margin-right: 10px;"></i> Mosaicking and tile assembly</li>
+                <li><i class="fas fa-check-circle" style="color: #ff8c00; margin-right: 10px;"></i> Reprojection to any coordinate system</li>
+                <li><i class="fas fa-check-circle" style="color: #ff8c00; margin-right: 10px;"></i> Time-series composites (monthly, seasonal, annual)</li>
+            </ul>
+        </div>
+
+        <div class="detail-section">
+            <h2>Delivery Formats</h2>
+            <p>We deliver products in your preferred format:</p>
+            <ul>
+                <li>GeoTIFF, Cloud Optimized GeoTIFF (COG)</li>
+                <li>Shapefile, GeoJSON, KML</li>
+                <li>Google Earth Engine asset</li>
+                <li>ArcGIS online service</li>
+                <li>NetCDF, HDF</li>
+            </ul>
+        </div>
+
+        <div class="detail-section">
+            <h2>Pricing</h2>
+            <p><strong>Standard products:</strong> Starting from <strong style="color: #ff8c00;">$100</strong> per product</p>
+            <p><strong>Custom processing:</strong> Quoted based on complexity and area</p>
+            <p><strong>Bulk orders:</strong> Volume discounts available</p>
+        </div>
+
+        <div>
+            <a href="../index.html#contact" class="cta-button">Request Custom Product →</a>
+            <a href="../index.html#services" class="back-button">← Back to Services</a>
+        </div>
+    </div>
+
+    <footer style="margin-top: 60px;">
+        <div class="container">
+            <div class="footer-content"><h3>About Zion</h3><p>Providing cutting-edge GIS and remote sensing solutions for sustainable development.</p></div>
+            <div class="footer-links"><h3>Quick Links</h3><ul><li><a href="../index.html">Home</a></li><li><a href="../index.html#services">Services</a></li><li><a href="../index.html#contact">Contact</a></li></ul></div>
+        </div>
+        <div class="bottom-bar"><p>Copyright © 2026 Zion. All rights reserved.</p></div>
+    </footer>
+</body>
+</html>
